@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBY KIWI | 자연이 선사한 붉은 보석</title>
+    <meta name="description" content="고당도 루비 키위. 풍부한 안토시아닌과 비타민C를 한 번에 경험하세요.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RUBY KIWI</div>
+        <nav>
+            <ul>
+                <li><a href="#">홈페이지</a></li>
+                <li><a href="#product">제품</a></li>
+                <li><a href="#story">스토리</a></li>
+                <li><a href="#inquiry">문의</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="lang-toggle">English</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tagline">Premium Red Kiwi</span>
+                <h1>자연의 보석,<br><span>루비 키위</span></h1>
+                <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 550px;">
+                    황금빛 과육 속에 숨겨진 붉은 보석. <br>
+                    일반 키위보다 높은 당도와 풍부한 항산화 성분으로 <br>
+                    당신의 일상에 활기를 더해보세요.
+                </p>
+                <a href="#product" class="cta-btn">지금 주문하기</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/ruby-kiwi-hero.png" alt="Premium Ruby Kiwi">
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" id="product">
+            <div class="section-title">
+                <h2>Product Features</h2>
+                <p style="color: var(--text-muted);">루비 키위만이 가진 특별한 매력</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i data-lucide="sun"></i>
+                    <h3>Superior Sweetness</h3>
+                    <p>최적의 기후에서 자라나 일반 키위보다 압도적인 당도를 자랑합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="heart"></i>
+                    <h3>Rich Anthocyanin</h3>
+                    <p>붉은 과육에 포함된 안토시아닌 성분이 건강한 심장과 혈관을 돕습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="zap"></i>
+                    <h3>Vitamin C Boost</h3>
+                    <p>하루 권장 비타민 C를 단 한 알로! 면역력 강화에 탁월합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story -->
+        <section class="story" id="story">
+            <div class="story-image">
+                <img src="assets/ruby-kiwi-lifestyle.png" alt="Ruby Kiwi Story">
+            </div>
+            <div class="story-content">
+                <h2>The Story of Ruby</h2>
+                <p>
+                    루비 키위는 전 세계 일부 지역에서만 재배되는 희귀한 품종입니다. 
+                    우리는 가장 신선한 상태의 루비 키위를 당신의 식탁에 올리기 위해 
+                    재배부터 수확까지 모든 과정을 엄격하게 관리합니다.
+                </p>
+                <p>
+                    지속 가능한 농법과 장인 정신이 만나 탄생한 루비 키위. 
+                    이제 그 특별한 맛의 여정을 시작해보세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- Inquiry -->
+        <section class="inquiry" id="inquiry">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p style="color: var(--text-muted);">대량 구매 및 제휴 문의를 남겨주세요.</p>
+            </div>
+            <div class="inquiry-box">
+                <form onsubmit="event.preventDefault(); alert('문의가 접수되었습니다.');">
+                    <div class="form-group">
+                        <input type="text" placeholder="성함" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="이메일 주소" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="문의하실 내용을 입력해주세요." rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn" style="width: 100%; border: none; cursor: pointer;">문의하기</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ruby Kiwi Premium. 모든 권리 보유.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
